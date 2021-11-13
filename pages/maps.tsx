@@ -21,7 +21,7 @@ const Map: NextPage = () => {
                     className="h-96 w-96 rounded-lg"
                   />
                 ) : (
-                  <div className="h-60 w-72 rounded-lg bg-white bg-opacity-20 animate-pulse" />
+                  <div className="h-96 w-96 rounded-lg bg-white bg-opacity-20 animate-pulse" />
                 )}
               </div>
               <div className="w-full metric-card max-w-7xl bg-white bg-opacity-20 rounded-2xl p-4 h-80 overflow-auto pr-6">
