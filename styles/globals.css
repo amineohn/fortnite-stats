@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  @apply bg-gradient-to-tl from-orange-500 via-orange-600 to-yellow-500 h-screen;
+  @apply bg-gradient-to-tl from-orange-500 via-orange-600 to-yellow-500 h-screen overflow-auto;
 }
 
 a {
