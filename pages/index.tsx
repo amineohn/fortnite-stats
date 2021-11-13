@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                                         className="w-full z-50 bg-cover"
                                       />
                                       <div>
-                                        <p>{item.name}</p>
+                                        <p className="text-xl">{item.name}</p>
                                       </div>
                                     </div>
                                   </div>

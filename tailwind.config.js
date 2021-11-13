@@ -31,6 +31,9 @@ module.exports = {
         coolGray: colors.coolGray,
         blueGray: colors.blueGray,
       },
+      fontFamily: {
+        fortnite: "Burbank Big Condensed",
+      },
     },
   },
   variants: {

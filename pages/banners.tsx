@@ -9,14 +9,14 @@ const Aes: NextPage = () => {
   const { data } = useSWR<Banners>(`/api/banners`, fetcher);
   return (
     <>
-      <FadeIn className="flex flex-col justify-center px-8 my-20">
+      <FadeIn className="flex flex-col justify-center px-8 my-20 z-50">
         <div className="flex flex-col items-center justify-center max-w-2xl mx-auto mb-16 dark:text-white">
           <h1 className="pb-2 text-5xl font-bold text-white">
             Banners Fortnite
           </h1>
           <div className="flex-col items-center">
             <div className="mb-8"></div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4 w-full">
+            <div className="grid grid-cols-2 lg:grid-cols-4 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4 w-full overflow-auto h-96 sm:h-80 md:h-80">
               {data ? (
                 <>
                   {data?.banners.map((item) => {
@@ -24,20 +24,22 @@ const Aes: NextPage = () => {
                       <>
                         {data ? (
                           <div className="w-full p-4 rounded-lg bg-white bg-opacity-20">
-                            <div className="flex text-gray-200">
+                            <div className="flex text-white">
                               <div className="inline space-y-2">
                                 <img
                                   src={item.images.icon}
                                   className="w-full rounded-lg z-50 bg-cover"
                                 />
                                 <div>
-                                  <p>{item.name}</p>
+                                  <p className="text-lg">{item.name}</p>
                                 </div>
                                 <div>
-                                  <p>{item.description}</p>
+                                  <p className="text-md">{item.description}</p>
                                 </div>
                                 <div>
-                                  <span>{item.category}</span>
+                                  <span className="text-md font-bold">
+                                    {item.category}
+                                  </span>
                                 </div>
                               </div>
                             </div>

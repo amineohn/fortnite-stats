@@ -31,25 +31,25 @@ const Map: NextPage = () => {
                 >
                   {data ? (
                     <>
-                      <div className="flex flex-col text-gray-200">
+                      <div className="flex flex-col text-white">
                         {data?.pois.map((item) => {
                           return (
                             <>
                               <div className="grid space-y-2">
                                 <div>
-                                  <span>id:</span>
-                                  <p>{item.id}</p>
+                                  <span className="text-lg">id:</span>
+                                  <p className="text-xl">{item.id}</p>
                                 </div>
                                 <div>
-                                  <span>location:</span>
-                                  <p>
+                                  <span className="text-lg">location:</span>
+                                  <p className="text-xl">
                                     {item.location.x} {item.location.y}
                                     {item.location.z}
                                   </p>
                                 </div>
                                 <div>
-                                  <span>name:</span>
-                                  <p>{item.name}</p>
+                                  <span className="text-lg">name:</span>
+                                  <p className="text-xl">{item.name}</p>
                                 </div>
                               </div>
                             </>

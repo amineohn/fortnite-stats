@@ -7,31 +7,31 @@ const Navigation = () => {
       <div>
         <a
           onClick={() => router.push("/")}
-          className="p-1 font-normal  text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
+          className="p-1 font-normal text-xl text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
         >
           Home
         </a>
         <a
           onClick={() => router.push("/aes")}
-          className="p-1 font-normal  text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
+          className="p-1 font-normal text-xl text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
         >
           Aes
         </a>
         <a
           onClick={() => router.push("/maps")}
-          className="p-1 font-normal  text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
+          className="p-1 font-normal text-xl text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
         >
           Maps
         </a>
         <a
           onClick={() => router.push("/news")}
-          className="p-1 font-normal  text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
+          className="p-1 font-normal text-xl text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
         >
           News
         </a>
         <a
           onClick={() => router.push("/banners")}
-          className="p-1 font-normal  text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
+          className="p-1 font-normal text-xl text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
         >
           Banners
         </a>

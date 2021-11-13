@@ -24,22 +24,22 @@ const Aes: NextPage = () => {
               >
                 {data ? (
                   <>
-                    <div className="flex flex-col text-gray-200">
+                    <div className="flex flex-col text-white">
                       {data?.dynamicKeys.map((item) => {
                         return (
                           <>
                             <div className="grid space-y-2">
                               <div>
-                                <span>pakFileName:</span>
-                                <p>{item.pakFilename}</p>
+                                <span className="text-lg">pakFileName:</span>
+                                <p className="text-xl">{item.pakFilename}</p>
                               </div>
                               <div>
-                                <span>pakGuid:</span>
-                                <p>{item.pakGuid}</p>
+                                <span className="text-lg">pakGuid:</span>
+                                <p className="text-xl">{item.pakGuid}</p>
                               </div>
                               <div>
-                                <span>key:</span>
-                                <p>{item.key}</p>
+                                <span className="text-lg">key:</span>
+                                <p className="text-xl">{item.key}</p>
                               </div>
                             </div>
                           </>
