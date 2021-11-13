@@ -9,7 +9,7 @@ const Map: NextPage = () => {
   const { data } = useSWR<Maps>(`/api/maps`, fetcher);
   return (
     <>
-      <FadeIn className="flex flex-col justify-center px-8 my-36">
+      <FadeIn className="flex flex-col justify-center px-8 my-0 md:my-36">
         <div className="flex flex-col items-center justify-center max-w-2xl mx-auto mb-16 dark:text-white">
           <h1 className="text-5xl font-bold text-white mb-2">Maps Fortnite</h1>
           <div className="flex-col justify-center items-center space-y-5">

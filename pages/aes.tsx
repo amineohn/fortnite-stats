@@ -17,7 +17,7 @@ const Aes: NextPage = () => {
           </h1>
           <div className="flex-col items-center">
             <div className="mb-8"></div>
-            <div className="w-full metric-card max-w-72 bg-white bg-opacity-20  rounded-2xl p-4 h-80 overflow-auto">
+            <div className="w-96 metric-card md:w-full bg-white bg-opacity-20 rounded-2xl p-4 h-80 overflow-auto">
               <p
                 className="mt-2 text-sm font-medium text-gray-800 spacing-sm dark:text-white"
                 data-interception="off"
