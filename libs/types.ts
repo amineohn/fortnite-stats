@@ -318,3 +318,36 @@ export type Shop = {
     ];
   };
 };
+
+export type News = {
+  hash: string;
+  date: string;
+  image: string;
+  motds: [
+    {
+      id: string;
+      title: string;
+      tabTitle: string;
+      body: string;
+      image: string;
+      tileImage: string;
+      sortingPriority: string;
+      hidden: boolean;
+    }
+  ];
+  messages: string;
+};
+
+export type Banners = {
+  banners: [
+    {
+      id: string;
+      devName: string;
+      name: string;
+      description: string;
+      category: string;
+      fullUsageRights: string;
+      images: { smallIcon: string; icon: string };
+    }
+  ];
+};

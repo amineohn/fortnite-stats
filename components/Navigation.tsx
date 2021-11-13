@@ -23,6 +23,18 @@ const Navigation = () => {
         >
           Maps
         </a>
+        <a
+          onClick={() => router.push("/news")}
+          className="p-1 font-normal  text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
+        >
+          News
+        </a>
+        <a
+          onClick={() => router.push("/banners")}
+          className="p-1 font-normal  text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:bg-gray-100 hover:bg-opacity-20"
+        >
+          Banners
+        </a>
       </div>
     </div>
   );

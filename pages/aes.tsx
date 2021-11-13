@@ -9,7 +9,7 @@ const Aes: NextPage = () => {
   const { data } = useSWR<AEs>(`/api/aes`, fetcher);
   return (
     <>
-      <FadeIn className="flex flex-col justify-center px-8 my-40">
+      <FadeIn className="flex flex-col justify-center px-8 my-20">
         <div className="flex flex-col items-center justify-center max-w-2xl mx-auto mb-16 dark:text-white">
           <h1 className="pb-2 text-5xl font-bold text-white">
             Builds Fortnite
