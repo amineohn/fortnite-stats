@@ -64,52 +64,50 @@ const Home: NextPage = () => {
                         </>
                       );
                     })}
-                    {
-                      !data?.daily?.entries[0]?.items?.map((item) => {
-                        return (
-                          <>
-                            {data ? (
-                              <div className="w-full p-4 rounded-lg bg-white bg-opacity-20">
+                    {data?.daily?.entries[0]?.items?.map((item) => {
+                      return (
+                        <>
+                          {data ? (
+                            <div className="w-full p-4 rounded-lg bg-white bg-opacity-20">
+                              <div className="inline-flex text-gray-200">
+                                <div className="grid space-y-2">
+                                  <img
+                                    src={item.images.smallIcon}
+                                    className="w-full z-50 bg-cover"
+                                  />
+                                  <div>
+                                    <p>{item.name}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          ) : (
+                            <div className="inline-flex m-auto">
+                              <div className="space-x-3 w-40 justify-center p-4 h-52 rounded-lg rounded-r-none bg-white bg-opacity-20 animate-pulse">
                                 <div className="inline-flex text-gray-200">
-                                  <div className="grid space-y-2">
-                                    <img
-                                      src={item.images.smallIcon}
-                                      className="w-full z-50 bg-cover"
-                                    />
-                                    <div>
-                                      <p>{item.name}</p>
-                                    </div>
-                                  </div>
+                                  <div className="grid space-y-2"></div>
                                 </div>
                               </div>
-                            ) : (
-                              <div className="inline-flex m-auto">
-                                <div className="space-x-3 w-40 justify-center p-4 h-52 rounded-lg rounded-r-none bg-white bg-opacity-20 animate-pulse">
-                                  <div className="inline-flex text-gray-200">
-                                    <div className="grid space-y-2"></div>
-                                  </div>
-                                </div>
-                                <div className="space-x-3 w-40 justify-center p-4 h-52 rounded-none bg-white bg-opacity-20 animate-pulse">
-                                  <div className="inline-flex text-gray-200">
-                                    <div className="grid space-y-2"></div>
-                                  </div>
-                                </div>
-                                <div className="space-x-3 w-40 justify-center p-4 h-52 rounded-none bg-white bg-opacity-20 animate-pulse">
-                                  <div className="inline-flex text-gray-200">
-                                    <div className="grid space-y-2"></div>
-                                  </div>
-                                </div>
-                                <div className="space-x-3 w-40 justify-center p-4 h-52 rounded-lg rounded-l-none bg-white bg-opacity-20 animate-pulse">
-                                  <div className="inline-flex text-gray-200">
-                                    <div className="grid space-y-2"></div>
-                                  </div>
+                              <div className="space-x-3 w-40 justify-center p-4 h-52 rounded-none bg-white bg-opacity-20 animate-pulse">
+                                <div className="inline-flex text-gray-200">
+                                  <div className="grid space-y-2"></div>
                                 </div>
                               </div>
-                            )}
-                          </>
-                        );
-                      })
-                    }
+                              <div className="space-x-3 w-40 justify-center p-4 h-52 rounded-none bg-white bg-opacity-20 animate-pulse">
+                                <div className="inline-flex text-gray-200">
+                                  <div className="grid space-y-2"></div>
+                                </div>
+                              </div>
+                              <div className="space-x-3 w-40 justify-center p-4 h-52 rounded-lg rounded-l-none bg-white bg-opacity-20 animate-pulse">
+                                <div className="inline-flex text-gray-200">
+                                  <div className="grid space-y-2"></div>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                        </>
+                      );
+                    })}
                     {data?.specialFeatured?.entries[0]?.items?.map((item) => {
                       return (
                         <>
