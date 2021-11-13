@@ -1,4 +1,3 @@
-@import url("https://db.onlinewebfonts.com/c/831e1041c97169ac1d4dc3d161b235cc?family=Burbank+Big+Condensed");
 html,
 body {
   padding: 0;
@@ -7,7 +6,20 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   @apply overflow-hidden;
 }
-
+@font-face {
+  font-family: "Burbank Big Condensed";
+  src: url("https://db.onlinewebfonts.com/t/831e1041c97169ac1d4dc3d161b235cc.eot");
+  src: url("https://db.onlinewebfonts.com/t/831e1041c97169ac1d4dc3d161b235cc.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/831e1041c97169ac1d4dc3d161b235cc.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/831e1041c97169ac1d4dc3d161b235cc.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/831e1041c97169ac1d4dc3d161b235cc.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/831e1041c97169ac1d4dc3d161b235cc.svg#Burbank Big Condensed")
+      format("svg");
+}
 body {
   @apply bg-gradient-to-tl from-orange-500 via-orange-600 to-yellow-500 h-screen overflow-auto;
 }
