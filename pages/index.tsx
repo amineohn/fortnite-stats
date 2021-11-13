@@ -26,45 +26,7 @@ const Home: NextPage = () => {
                         {data.featured?.entries[0]?.items?.map((item) => {
                           return (
                             <>
-                              <div className="w-full p-4 rounded-lg bg-white bg-opacity-20 m-auto">
-                                <div className="inline-flex text-gray-200">
-                                  <div className="grid space-y-2">
-                                    <img
-                                      src={item.images.smallIcon}
-                                      className="w-full z-50 bg-cover"
-                                    />
-                                    <div>
-                                      <p>{item.name}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </>
-                          );
-                        })}
-                        {data.daily?.entries[0]?.items?.map((item) => {
-                          return (
-                            <>
-                              <div className="w-full p-4 rounded-lg bg-white bg-opacity-20">
-                                <div className="inline-flex text-gray-200">
-                                  <div className="grid space-y-2">
-                                    <img
-                                      src={item.images.smallIcon}
-                                      className="w-full z-50 bg-cover"
-                                    />
-                                    <div>
-                                      <p>{item.name}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </>
-                          );
-                        })}
-                        {data.specialFeatured?.entries[0]?.items?.map(
-                          (item) => {
-                            return (
-                              <>
+                              {data ? (
                                 <div className="w-full p-4 rounded-lg bg-white bg-opacity-20">
                                   <div className="inline-flex text-gray-200">
                                     <div className="grid space-y-2">
@@ -78,23 +40,79 @@ const Home: NextPage = () => {
                                     </div>
                                   </div>
                                 </div>
+                              ) : (
+                                <div className="w-full p-4 h-44 rounded-lg bg-white bg-opacity-20 animate-pulse"></div>
+                              )}
+                            </>
+                          );
+                        })}
+                        {data.daily?.entries[0]?.items?.map((item) => {
+                          return (
+                            <>
+                              {data ? (
+                                <div className="w-full p-4 rounded-lg bg-white bg-opacity-20">
+                                  <div className="inline-flex text-gray-200">
+                                    <div className="grid space-y-2">
+                                      <img
+                                        src={item.images.smallIcon}
+                                        className="w-full z-50 bg-cover"
+                                      />
+                                      <div>
+                                        <p>{item.name}</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              ) : (
+                                <div className="w-full p-4 h-44 rounded-lg bg-white bg-opacity-20 m-auto animate-pulse"></div>
+                              )}
+                            </>
+                          );
+                        })}
+                        {data.specialFeatured?.entries[0]?.items?.map(
+                          (item) => {
+                            return (
+                              <>
+                                {data ? (
+                                  <div className="w-full p-4 rounded-lg bg-white bg-opacity-20">
+                                    <div className="inline-flex text-gray-200">
+                                      <div className="grid space-y-2">
+                                        <img
+                                          src={item.images.smallIcon}
+                                          className="w-full z-50 bg-cover"
+                                        />
+                                        <div>
+                                          <p>{item.name}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                ) : (
+                                  <div className="w-full p-4 h-44 rounded-lg bg-white bg-opacity-20 animate-pulse"></div>
+                                )}
                               </>
                             );
                           }
                         )}
-                        <div className="w-full p-4 rounded-lg bg-white bg-opacity-20">
-                          <div className="inline-flex text-gray-200">
-                            <div className="grid space-y-2">
-                              <img
-                                src={data.featured?.entries[0]?.bundle.image}
-                                className="w-full z-50 bg-cover"
-                              />
-                              <div>
-                                <p>{data.featured?.entries[0]?.bundle.name}</p>
+                        {data ? (
+                          <div className="w-full p-4 rounded-lg bg-white bg-opacity-20">
+                            <div className="inline-flex text-gray-200">
+                              <div className="grid space-y-2">
+                                <img
+                                  src={data.featured?.entries[0]?.bundle.image}
+                                  className="w-full z-50 bg-cover"
+                                />
+                                <div>
+                                  <p>
+                                    {data.featured?.entries[0]?.bundle.name}
+                                  </p>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
+                        ) : (
+                          <div className="w-full p-4 h-44 rounded-lg bg-white bg-opacity-20 m-auto animate-pulse"></div>
+                        )}
                       </div>
                     </>
                   ) : (
