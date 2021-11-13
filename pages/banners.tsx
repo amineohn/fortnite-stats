@@ -11,7 +11,9 @@ const Aes: NextPage = () => {
     <>
       <FadeIn className="flex flex-col justify-center px-8 my-20">
         <div className="flex flex-col items-center justify-center max-w-2xl mx-auto mb-16 dark:text-white">
-          <h1 className="pb-2 text-5xl font-bold text-white">News Fortnite</h1>
+          <h1 className="pb-2 text-5xl font-bold text-white">
+            Banners Fortnite
+          </h1>
           <div className="flex-col items-center">
             <div className="mb-8"></div>
             <div className="grid grid-cols-2 lg:grid-cols-4 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4 w-full">
