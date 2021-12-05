@@ -157,11 +157,11 @@ const Home: NextPage = () => {
                         <div className="inline-flex text-gray-200">
                           <div className="grid space-y-2">
                             <img
-                              src={data.featured?.entries[0]?.bundle.image}
+                              src={data.featured?.entries[0]?.bundle?.image}
                               className="w-full z-50 bg-cover"
                             />
                             <div>
-                              <p>{data.featured?.entries[0]?.bundle.name}</p>
+                              <p>{data.featured?.entries[0]?.bundle?.name}</p>
                             </div>
                           </div>
                         </div>
